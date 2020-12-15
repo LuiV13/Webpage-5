@@ -1,0 +1,123 @@
+body {
+  background-color: lightblue;
+  animation-name: back;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+h1 {
+  color: cyan;
+  font-size: 50px;
+  font-family: sans-serif;
+  animation-name: hi;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+
+
+#container {
+  position: relative;
+  margin: 0 auto;
+  top: 90px;
+  height: 350px;
+  width: 350px;
+  border-radius: 100%;
+  background: #000;
+  box-shadow: 10px 15px 15px;
+  animation-name: stuff;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes stuff {
+  0%   {background-color: red; left: 250px;}
+ 25%  {background-color: lightblue; right: 250px;}
+ 50%  {background-color: blue; top: 150px;}
+ 75%  {background-color: pink; bottom:250px;}
+ 100% {background-color: black; bottom: 100px;}
+  }
+
+#square {
+  position: relative;
+  margin: 0 auto;
+  height: 65px;
+  width: 65px;
+  border-radius: 100%;
+  background: #FFF;
+  animation-name: square;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+@keyframes square{
+  0%   {background-color: red;}
+ 25%  {background-color: lightblue;}
+ 50%  {background-color: blue;}
+ 75%  {background-color: pink;}
+ 100% {background-color: black;}
+}
+
+
+#awesome {
+  position: absolute;
+  bottom: 50px;
+  left: 25px;
+  height: 65px;
+  width: 65px;
+  border-radius: 100%;
+  background: #FFF;
+  animation-name: ahh;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes ahh{
+  0%   {background-color: red;}
+ 25%  {background-color: lightblue;}
+ 50%  {background-color: blue;}
+ 75%  {background-color: pink;}
+ 100% {background-color: black;}
+}
+
+#cool {
+  position: absolute;
+  bottom: 50px;
+  right: 25px;
+  height: 65px;
+  width: 65px;
+  border-radius: 100%;
+  background: #FFF;
+  animation-name: cool;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+}
+
+@keyframes cool{
+  0%   {background-color: red;}
+ 25%  {background-color: lightblue;}
+ 50%  {background-color: blue;}
+ 75%  {background-color: pink;}
+ 100% {background-color: black;}
+}
+
+@keyframes hi {
+  0%   {background-color: red; left: 250px;}
+ 25%  {background-color: lightblue; right: 250px;}
+ 50%  {background-color: blue; left: 250px;}
+ 75%  {background-color: green; right: 250px;}
+ 100% {background-color: black; left: 0px; right: 0px;}
+}
+
+@keyframes back {
+  0%   {background-color: #ffeb00;}
+ 25%  {background-color: #fc0019;}
+ 50%  {background-color: #01ff4f;}
+ 75%  {background-color: #ff01d7;}
+ 95% {background-color: #5600cc;}
+ 100% {background-color: #00edf5}
+}
